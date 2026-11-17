@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox</title>
+  <style>
+    .container{
+      border: 2px solid black;
+      display: flex;
+      height: 400px;
+      justify-content: center; /*horizontally*/
+      align-items: center; /*vertically*/
+      flex-wrap: wrap;
+      /* align-content: flex-start; */
+      /* align means vertically */
+      gap: 40px 10px;
+      /* flex-flow:row-reverse; */
+
+    }
+
+    .item{
+      flex-grow: 1;
+      background-color: lightblue;
+      margin: 2px;
+      height: 50px;
+      width: 50px;
+      border: 2px solid rgb(165, 3, 235); 
+    }
+
+    .order-1{
+      order: 1;
+    }
+
+    .order-2{
+      order: 50;
+    }
+    /* by default order of items is 0 */
+    
+    
+    .item1{
+      /* flex-grow: 80; */
+      align-self: flex-start;
+    }
+
+  </style>
+</head>
+<body>
+  <main>
+    <div class="container">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item order-1">4</div>
+      <div class="item order-2">5</div>
+      <div class="item">6</div>
+      <div class="item">7</div>
+      <div class="item item1">8</div>
+      <div class="item">8</div>
+      <div class="item">8</div>
+      <div class="item">8</div>
+      <div class="item">8</div>
+
+      <div class="item">7</div>
+      <div class="item">8</div>
+      <div class="item">8</div>
+      <div class="item">8</div>
+      <div class="item">8</div>
+      <div class="item">8</div>
+
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS transitions</title>
+  <style>
+    .container{
+      background-color: aquamarine;
+      width: 50vw;
+      height: 40vh;
+    }
+
+    .box{
+      background-color: rgb(193, 155, 83);
+      width: 5vw;
+      height: 4vh;
+      /* transition-property: background-color, transform;
+      transition-duration: 3s;
+      transition-timing-function: cubic-bezier(0.65, 0.94, 0.21, 1.3);
+      transition-delay: 1s; */
+
+      transition: all 3s cubic-bezier(0.65, 0.94, 0.21, 1.3) 1s;
+    }
+
+    .translate{
+      transform: translateX(10vw) translateY(10vh) scale(2);
+      background-color: rgb(189, 224, 12);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box translate"></div>
+  </div>
+</body>
+</html>
+
+<!-- in inspect mode try removing translate  -->

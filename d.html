@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="this page will clear your doubts on html lists, tables and alt feature in img tag">
+  <title>Image, Table, lists</title>
+  <style>
+    td {
+      border: 2px solid red;
+    }
+  </style>
+</head>
+
+<body>
+  <img height="400" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_AcHZ7TZnObTmKFlEAx_iLGzXUdMz7s2VMw&s"
+    alt="doraemon image">
+  <br>
+  <!-- <img src="" alt="empty"> -->
+  <table>
+    <caption>Student details</caption>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>age</th>
+        <th>fav language</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>19</td>
+        <td>JS</td>
+      </tr>
+
+      <tr>
+        <td>Samuel</td>
+        <!-- <td colspan="2">Samuel</td> -->
+        <td>25</td>
+        <!-- <td>Python</td> -->
+        <td rowspan="2">Python</td>
+      </tr>
+
+      <tr>
+        <td>Harry</td>
+        <td>28</td>
+        <td>Java</td>
+      </tr>
+    </tbody>
+
+    <tfoot>
+      <tr>
+        <td>foot</td>
+      </tr>
+    </tfoot>
+  </table>
+
+
+  <ul type="square">
+    <li>orange</li>
+    <li>mango</li>
+    <li>pineapple</li>
+  </ul>
+
+  <ol type="1">
+    <li>bachelors</li>
+    <li>masters</li>
+    <li>phd</li>
+  </ol>
+
+  <hr>
+  <footer>copyright</footer>
+</body>
+
+</html>
