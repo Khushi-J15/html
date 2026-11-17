@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divs2</title>
+    <style>
+        .div1{
+            background-color: cadetblue;
+            margin-bottom:10px;
+            
+            display: flex;
+            flex-direction: row;
+        }
+        .div2{ /* div1 contains div2 and div3 if not specified width of div2 and div3 than it takes width of div1*/
+            background-color: darkorchid;
+            flex : 3;
+        }
+        .div3{
+            background-color: lightsalmon;
+            flex: 6;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="div1">hello
+        <div class="div2">hy avengerssss</div>
+        <div class="div3">khushi</div>
+    </div>
+
+    </body>
+</html>
